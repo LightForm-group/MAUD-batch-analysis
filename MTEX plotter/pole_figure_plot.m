@@ -1,8 +1,17 @@
-function [  ] = pole_figure_plot(phase, odf, CS, pf_max, outputDir, baseFileName);
+function [  ] = pole_figure_plot(phase, odf, CS, pf_max, outputDir, baseFileName, visible);
 % A function for plotting alpha (hexagonal close-packed) or beta (body-centred-cubic) pole figures using MTEX
+  
+  if strcmp(visible, 'on');  
+    set(0,'DefaultFigureVisible','on');
+  elseif strcmp(visible, 'off');
+    set(0,'DefaultFigureVisible','off');
+  else
+    disp ('Visibility of pole figures not set as on or off.');
+    return;
+  end
 
   if strcmp(phase, 'alpha');
-    PF = figure('visible', 'off');
+    PF = figure();
     hkil = [Miller(0,0,0,2,odf.CS), Miller(1,0,-1,0,odf.CS), Miller(1,1,-2,0,odf.CS)]; % include hkil figures here
     plotPDF(odf, hkil, 'antipodal', 'minmax'); % plot without contouring
     text(vector3d.X, 'LD', 'VerticalAlignment', 'bottom'); % moving the vector3d axis labels outside of the hemisphere boundary

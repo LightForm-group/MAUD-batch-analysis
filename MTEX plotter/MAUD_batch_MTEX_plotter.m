@@ -33,6 +33,11 @@ pf_max = 4; % set the pole figure maxima
 
 odf_max = 10; % set the ODF maxima
 
+%% Specify whether figures are visible (will pop-up)
+
+visible = 'on'
+%visible = 'off'
+
 %% ... End of User Inputs
 
 %% Select Input and Output Directories
@@ -121,16 +126,16 @@ for k = 1:length(inputFiles);
   TEXTURE_INDEX = textureindex(odf);
   
   % plot the pole figure
-  pole_figure_plot(phase, odf, CS, pf_max, outputDir, baseFileName);
+  pole_figure_plot(phase, odf, CS, pf_max, outputDir, baseFileName, visible);
   
   % plot the ODF
   specSym = 'triclinic';
-  ODF_plot(phase, odf, odf_max, outputDir, baseFileName, specSym);
+  ODF_plot(phase, odf, odf_max, outputDir, baseFileName, specSym, visible);
   
   % plot the ODF with Orthorhombic Symmetry
   odf.SS=specimenSymmetry('orthorhombic');
   specSym = 'orthorhombic';
-  ODF_plot(phase, odf, odf_max, outputDir, baseFileName, specSym);
+  ODF_plot(phase, odf, odf_max, outputDir, baseFileName, specSym, visible);
   
   % calculate a value for the Texture Index with Orthorhombic Symmetry
   TEXTURE_INDEX_ORTHO = textureindex(odf);
