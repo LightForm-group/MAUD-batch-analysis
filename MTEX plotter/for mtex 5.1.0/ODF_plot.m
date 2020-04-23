@@ -3,8 +3,10 @@ function [  ] = ODF_plot(phase, odf, odf_max, outputDir, baseFileName, specSym, 
 
   if strcmp(visible, 'on');  
     set(0,'DefaultFigureVisible','on');
+    set(groot,'DefaultFigureVisible','on');
   elseif strcmp(visible, 'off');
     set(0,'DefaultFigureVisible','off');
+    set(groot,'DefaultFigureVisible','off');
   else
     disp ('Visibility of ODF figures not set as on or off.');
     return;
@@ -25,7 +27,7 @@ function [  ] = ODF_plot(phase, odf, odf_max, outputDir, baseFileName, specSym, 
     end
   
   elseif strcmp(phase, 'beta');
-    ODF_fig = figure('visible', 'off');
+    ODF_fig = figure();
     plot(odf, 'PHI2', [0 45]*degree);
     CLim(gcm,[0,odf_max]); % define a colour giving the range (gcm, [min, max])
     mtexColorbar ('location', 'southOutSide', 'title', 'mrd'); % move colorbar to horizontal to avoid any overlap

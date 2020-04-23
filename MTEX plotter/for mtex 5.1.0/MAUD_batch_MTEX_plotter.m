@@ -35,15 +35,15 @@ odf_max = 10; % set the ODF maxima
 
 %% Specify whether figures are visible (will pop-up)
 
-visible = 'on'
-%visible = 'off'
+visible = 'on';
+%visible = 'off';
 
 %% ... End of User Inputs
 
 %% Select Input and Output Directories
 
 inputDir = uigetdir; % gets input directory
-inputFiles = dir(fullfile(inputDir,'*.txt')); % gets all txt files in struct
+inputFiles = dir(fullfile(inputDir,'ODF*.txt')); % gets all txt files in struct
 
 outputDir = uigetdir; % gets output directory
 
