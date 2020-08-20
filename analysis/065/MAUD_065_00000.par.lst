@@ -1,48 +1,2198 @@
 Jacobi matrix :
-#    0              1              2              3              4              5              6              7              8              9              10             11             12             13            
-0    1178963.600733
-1    9507.261980722 7705.071313943
-2    58964.47427484 44889.15248838 290751.8515664
-3    383284.7571419 290946.1855092 2023429.228996 1.476854099362
-4    2588245.429934 2025056.617501 1.477054652530 1.114066437378 8.604299990446
-5    1.802187881695 1.478600123840 1.114487201354 8.606380963004 6.764755310938 5.391134139629
-6    -7471943.98447 4316185.578715 2.490067769264 1.578142358276 1.074591686597 7.712349442294 4.822290600621
-7    2180.136853906 -2.63983397959 -29.2875825860 -276.415432463 -2345.52774503 -18617.0547036 -199256.891473 321292.8080996
-8    -398.662669191 2.643535868906 33.46590610518 424.9129710664 4557.526518442 44273.84798150 959525.9208454 9599.723575297 291645.7189947
-9    1464104.369633 -5327.92860044 -20998.8257056 -89297.6021719 -463080.595178 -3247158.07807 -8.87714504943 -66440.7658859 200633.1704127 2.919123794743
-10   84037.03715432 1477.323584099 9584.400356050 59625.69270322 347062.3368578 1800489.180091 -2900004.68510 -145380.492047 177087.1783724 5.181434590386 6.950374647103
-11   -16.4831000242 -1.94127705607 -10.5146723740 -62.4416046877 -399.839489529 -2716.43077041 -1510.49978634 0.331319584274 -0.45890534686 37.86714558244 10.66147487007 0.054496827712
-12   5298.867937218 24077.47547300 160966.2140992 1137326.952722 8368668.943610 6.349876552418 6.021579017365 14325.18737263 -5493.27611678 -1113377.13576 -37351.1228469 -96.3899556489 4371363.625332
-13   2930.064886960 -1701.39885578 -11573.7910075 -83029.6775425 -618855.029337 -4745517.22049 -1.13604917056 27.91376700196 -171.342465633 10116.57166546 -2175.20393019 0.127635733822 -10520.1182923 4126.436353785
+#    0              1              2              3              4              5              6              7              8              9             
+0    1430293.374266
+1    11352.64187109 7689.206411496
+2    71901.54002268 44849.24116463 290827.3019160
+3    475178.3257158 290595.6669410 2023294.632531 1.476267654822
+4    3250242.697337 2020308.464551 1.475263842705 1.112344578911 8.581107758286
+5    2.286970118951 1.473746320519 1.112086113952 8.584951324459 6.740120075647 5.366386899632
+6    -3258281.28265 1312174.294047 7855905.402787 5.133147824099 3.579627722226 2.618353655591 3.834705674715
+7    1484173.701883 5035.024205431 36956.27250742 264130.9480731 1819824.873734 1.205050604885 1.194829448259 4.035276573200
+8    86818.06941719 3475.569204466 15994.72887082 72006.19917901 264865.6604760 156508.2830471 8576623.366133 6.941939237533 7.859736948756
+9    260744.7877924 2325.217656063 9244.897449780 38307.77857476 163245.5795571 679507.7791756 -1277372.56645 -2836183.17100 -863281.911109 6678986.671524
 Correlation matrix:
-#    0              1              2              3              4              5              6              7              8              9              10             11             12             13            
+#    0              1              2              3              4              5              6              7              8              9             
 0    1.0           
-1    0.454879260106 -1.0          
-2    -0.36979816307 0.971077919237 -1.0          
-3    -0.06527313656 -1.03471757205 1.072239767025 -1.0          
-4    0.773272802725 1.326025228557 -1.18806615101 0.802831067086 -1.0          
-5    -0.76050771381 -1.28187966751 1.225835122723 -0.68258726756 0.972283903513 -1.0          
-6    0.037040678937 0.332187038972 0.144976014255 -0.59310665008 1.041884599913 -1.18434506064 -1.0          
-7    0.001320361829 -0.00573772088 0.002049738817 4.685318505105 0.001844683190 -0.00441431782 -0.00876104620 1.0           
-8    -0.53007142375 -0.32325693118 0.256256937532 0.001768351407 -0.44946123672 0.421929344817 -0.07291849520 1.293515615128 1.0           
-9    0.565406825232 0.324729180365 -0.25711601069 -0.01223587979 0.468926954634 -0.44180861552 0.059601785549 0.041476274351 0.876230359488 -1.0          
-10   -2.34882242026 -0.84966078514 0.689824838146 0.283066728990 -1.87720814387 1.854732300198 0.261248366345 -2.97473115282 1.204832504299 2.987149358364 -1.0          
-11   0.888476985778 -0.35896687273 0.232967759861 -0.38027964898 0.522296827937 -0.63869455612 -0.71010066599 0.197422568766 -0.35700552578 0.673422804732 -3.10670886569 -1.0          
-12   -0.79363258197 0.440755476938 -0.32017799691 0.433635981814 -0.48913902301 0.611229194568 0.812392328400 0.013431016234 0.636578534638 -0.63652311786 1.600909827816 -4.02265417447 -1.0          
-13   0.793437400493 -0.44076805114 0.320191151507 -0.43358585538 0.488999709505 -0.61107723055 -0.81239230328 -0.01343089567 -0.63643262079 0.636369531748 -1.60051808001 -1.01835119350 1.000000011441 -1.0          
+1    0.430406309141 -1.0          
+2    -0.45219417731 0.978376938087 -1.0          
+3    0.367401250833 -0.95596207177 0.997585313774 -1.0          
+4    -0.05318565024 0.935856884950 -0.81913165613 0.741729419027 -1.0          
+5    0.029433809471 -0.87766323211 0.834215568160 -0.62096945634 0.986505959427 -1.0          
+6    -0.58182606419 1.093207586843 -0.21232187842 -0.55612348426 1.142872427022 -1.23477571317 -1.0          
+7    4.381338926458 0.133799750761 -0.10586648895 -0.21068206470 0.366398023844 -0.37973332472 -0.45536282356 -1.0          
+8    2.068847606289 0.015454566638 0.010853695633 -0.17108871202 0.239142081175 -0.26025928173 -0.01458592594 15.44563215250 -1.0          
+9    8.513322322993 0.271469370794 -0.14062409112 -0.57905193906 1.205650442460 -1.30179824824 -1.10338689828 -1.18671645596 -2.06262718107 -1.0          
 Correlation matrix from Choleski decomposition :
-#    0              1              2              3              4              5              6              7              8              9              10             11             12             13            
+#    0              1              2              3              4              5              6              7              8              9             
 0    1.0           
-1    0.454879260106 -1.0          
-2    -0.36979816307 0.971077919237 -1.0          
-3    -0.06527313656 -1.03471757205 1.072239767025 -1.0          
-4    0.773272802725 1.326025228557 -1.18806615101 0.802831067086 -1.0          
-5    -0.76050771381 -1.28187966751 1.225835122723 -0.68258726756 0.972283903513 -1.0          
-6    0.037040678937 0.332187038972 0.144976014255 -0.59310665008 1.041884599913 -1.18434506064 -1.0          
-7    0.001320361829 -0.00573772088 0.002049738817 4.685318505105 0.001844683190 -0.00441431782 -0.00876104620 1.0           
-8    -0.53007142375 -0.32325693118 0.256256937532 0.001768351407 -0.44946123672 0.421929344817 -0.07291849520 1.293515615128 1.0           
-9    0.565406825232 0.324729180365 -0.25711601069 -0.01223587979 0.468926954634 -0.44180861552 0.059601785549 0.041476274351 0.876230359488 -1.0          
-10   -2.34882242026 -0.84966078514 0.689824838146 0.283066728990 -1.87720814387 1.854732300198 0.261248366345 -2.97473115282 1.204832504299 2.987149358364 -1.0          
-11   0.888476985778 -0.35896687273 0.232967759861 -0.38027964898 0.522296827937 -0.63869455612 -0.71010066599 0.197422568766 -0.35700552578 0.673422804732 -3.10670886569 -1.0          
-12   -0.79363258197 0.440755476938 -0.32017799691 0.433635981814 -0.48913902301 0.611229194568 0.812392328400 0.013431016234 0.636578534638 -0.63652311786 1.600909827816 -4.02265417447 -1.0          
-13   0.793437400493 -0.44076805114 0.320191151507 -0.43358585538 0.488999709505 -0.61107723055 -0.81239230328 -0.01343089567 -0.63643262079 0.636369531748 -1.60051808001 -1.01835119350 1.000000011441 -1.0          
+1    0.430406309141 -1.0          
+2    -0.45219417731 0.978376938087 -1.0          
+3    0.367401250833 -0.95596207177 0.997585313774 -1.0          
+4    -0.05318565024 0.935856884950 -0.81913165613 0.741729419027 -1.0          
+5    0.029433809471 -0.87766323211 0.834215568160 -0.62096945634 0.986505959427 -1.0          
+6    -0.58182606419 1.093207586843 -0.21232187842 -0.55612348426 1.142872427022 -1.23477571317 -1.0          
+7    4.381338926458 0.133799750761 -0.10586648895 -0.21068206470 0.366398023844 -0.37973332472 -0.45536282356 -1.0          
+8    2.068847606289 0.015454566638 0.010853695633 -0.17108871202 0.239142081175 -0.26025928173 -0.01458592594 15.44563215250 -1.0          
+9    8.513322322993 0.271469370794 -0.14062409112 -0.57905193906 1.205650442460 -1.30179824824 -1.10338689828 -1.18671645596 -2.06262718107 -1.0          
+Analysis title: Put a title here
+
+Refined parameters:
+
+0 MAUD_065_00000.par:Sample_x:layer1:_pd_phase_atom_%1 value:0.030306006 error:7.315725E-4
+1 MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_pol0 value:2.3040855 error:0.76313233
+2 MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_pol1 value:0.019193426 error:0.64432454
+3 MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_pol2 value:-0.076512516 error:0.18972577
+4 MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_pol3 value:0.009062758 error:0.02341946
+5 MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_pol4 value:-2.9785477E-4 error:0.0010330182
+6 MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:_pd_proc_intensity_incident value:0.0052997353 error:1.4396272E-5
+7 MAUD_065_00000.par:Sample_x:alpha:_cell_length_a value:2.920297 error:4.66746E-5
+8 MAUD_065_00000.par:Sample_x:alpha:_cell_length_c value:4.6652756 error:1.054505E-4
+9 MAUD_065_00000.par:Sample_x:beta:_cell_length_a value:3.1921947 error:3.349222E-4
+
+Refinement final output indices:
+Global Rwp: 0.2884484
+Global Rp: 0.23138589
+Global Rwpnb (no background): 0.32539403
+Global Rwpnb1 (no bkg rescaled): 0.2991612
+Global Rwpnb2 (no bkg rescaled^2): 0.28380704
+Global Rpnb (no background): 0.2719794
+Global Rpnb1 (no bkg rescaled): 0.24823603
+Global Rpnb2 (no bkg rescaled^2): 0.23278156
+Total energy: 0.0
+
+Refinement final output indices for single samples:
+Sample Sample_x :
+Sample Rwp: 0.2884484
+Sample Rp: 0.23138589
+Sample Rwpnb (no background): 0.32539403
+Sample Rwpnb1 (no bkg rescaled): 0.2991612
+Sample Rwpnb2 (no bkg rescaled^2): 0.28380704
+Sample Rpnb (no background): 0.2719794
+Sample Rpnb1 (no bkg rescaled): 0.24823603
+Sample Rpnb2 (no bkg rescaled^2): 0.23278156
+Sample energy: 0.0
+
+Refinement final output indices for single datasets:
+DataSet DataFileSet_x :
+DataSet Rwp: 0.2884484
+DataSet Rp: 0.23138589
+DataSet Rwpnb (no background): 0.32539403
+DataSet Rwpnb1 (no bkg rescaled): 0.2991612
+DataSet Rwpnb2 (no bkg rescaled^2): 0.28380704
+DataSet Rpnb (no background): 0.2719794
+DataSet Rpnb1 (no bkg rescaled): 0.24823603
+DataSet Rpnb2 (no bkg rescaled^2): 0.23278156
+
+Refinement final output indices for single spectra:
+Datafile MAUD_065_00000.esg(0) : Rwp: 0.3131306, Rp: 0.26730892, Rwpnb: 0.34513164, Rwpnb1: 0.3234096, Rwpnb2: 0.3090224, Rpnb: 0.30251142Rpnb1: 0.28204113Rpnb2: 0.2671597
+Datafile MAUD_065_00000.esg(1) : Rwp: 0.26542532, Rp: 0.22718896, Rwpnb: 0.29299787, Rwpnb1: 0.27314147, Rwpnb2: 0.26115838, Rpnb: 0.25827065Rpnb1: 0.23969725Rpnb2: 0.22693673
+Datafile MAUD_065_00000.esg(2) : Rwp: 0.24670108, Rp: 0.20427044, Rwpnb: 0.27391422, Rwpnb1: 0.2538183, Rwpnb2: 0.24221633, Rpnb: 0.23451972Rpnb1: 0.2162928Rpnb2: 0.20405556
+Datafile MAUD_065_00000.esg(3) : Rwp: 0.25570548, Rp: 0.19989863, Rwpnb: 0.2835701, Rwpnb1: 0.265545, Rwpnb2: 0.25459585, Rpnb: 0.22935681Rpnb1: 0.211857Rpnb2: 0.20029475
+Datafile MAUD_065_00000.esg(4) : Rwp: 0.26397932, Rp: 0.187489, Rwpnb: 0.30056512, Rwpnb1: 0.27536625, Rwpnb2: 0.26188558, Rpnb: 0.2235219Rpnb1: 0.20005831Rpnb2: 0.18562058
+Datafile MAUD_065_00000.esg(5) : Rwp: 0.28741142, Rp: 0.23826177, Rwpnb: 0.33046108, Rwpnb1: 0.30294722, Rwpnb2: 0.28762597, Rpnb: 0.28943104Rpnb1: 0.2627227Rpnb2: 0.24656756
+Datafile MAUD_065_00000.esg(6) : Rwp: 0.29085344, Rp: 0.22182176, Rwpnb: 0.33959314, Rwpnb1: 0.29882136, Rwpnb2: 0.27753475, Rpnb: 0.27517632Rpnb1: 0.24184318Rpnb2: 0.2220498
+Datafile MAUD_065_00000.esg(7) : Rwp: 0.30852646, Rp: 0.24599373, Rwpnb: 0.35695058, Rwpnb1: 0.3205146, Rwpnb2: 0.300882, Rpnb: 0.3008093Rpnb1: 0.2676962Rpnb2: 0.24750493
+Datafile MAUD_065_00000.esg(8) : Rwp: 0.3452221, Rp: 0.29576132, Rwpnb: 0.38169143, Rwpnb1: 0.36376843, Rwpnb2: 0.3530925, Rpnb: 0.338225Rpnb1: 0.31805736Rpnb2: 0.3043888
+Datafile MAUD_065_00000.esg(9) : Rwp: 0.29512864, Rp: 0.2487116, Rwpnb: 0.32555416, Rwpnb1: 0.3036292, Rwpnb2: 0.289876, Rpnb: 0.28288725Rpnb1: 0.2621486Rpnb2: 0.24787366
+Datafile MAUD_065_00000.esg(10) : Rwp: 0.26415822, Rp: 0.20907985, Rwpnb: 0.31036755, Rwpnb1: 0.27813643, Rwpnb2: 0.25931445, Rpnb: 0.25942457Rpnb1: 0.22846851Rpnb2: 0.20852336
+Datafile MAUD_065_00000.esg(11) : Rwp: 0.28333187, Rp: 0.22553968, Rwpnb: 0.33593544, Rwpnb1: 0.30194083, Rwpnb2: 0.28237462, Rpnb: 0.2853071Rpnb1: 0.2516382Rpnb2: 0.2311399
+Datafile MAUD_065_00000.esg(12) : Rwp: 0.25362447, Rp: 0.20707802, Rwpnb: 0.29692137, Rwpnb1: 0.2651348, Rwpnb2: 0.24723826, Rpnb: 0.2563122Rpnb1: 0.22736716Rpnb2: 0.2090178
+Datafile MAUD_065_00000.esg(13) : Rwp: 0.27150857, Rp: 0.21882853, Rwpnb: 0.3122414, Rwpnb1: 0.28960565, Rwpnb2: 0.27592874, Rpnb: 0.26434082Rpnb1: 0.24035858Rpnb2: 0.2250124
+Datafile MAUD_065_00000.esg(14) : Rwp: 0.22600609, Rp: 0.18598181, Rwpnb: 0.2569699, Rwpnb1: 0.23386794, Rwpnb2: 0.22003329, Rpnb: 0.22047819Rpnb1: 0.19920495Rpnb2: 0.1850898
+Datafile MAUD_065_00000.esg(15) : Rwp: 0.24475752, Rp: 0.20833217, Rwpnb: 0.2742774, Rwpnb1: 0.25239667, Rwpnb2: 0.23942444, Rpnb: 0.24163252Rpnb1: 0.2213484Rpnb2: 0.20761576
+Datafile MAUD_065_00000.esg(16) : Rwp: 0.27989292, Rp: 0.23861389, Rwpnb: 0.30997825, Rwpnb1: 0.29137754, Rwpnb2: 0.28014934, Rpnb: 0.27186587Rpnb1: 0.25295955Rpnb2: 0.23965538
+Datafile MAUD_065_00000.esg(17) : Rwp: 0.27119645, Rp: 0.23124096, Rwpnb: 0.30185682, Rwpnb1: 0.27711815, Rwpnb2: 0.26106718, Rpnb: 0.26447007Rpnb1: 0.24271232Rpnb2: 0.22685607
+Datafile MAUD_065_00000.esg(18) : Rwp: 0.31853637, Rp: 0.25971368, Rwpnb: 0.35338292, Rwpnb1: 0.32827902, Rwpnb2: 0.31173447, Rpnb: 0.29588532Rpnb1: 0.2732019Rpnb2: 0.25674045
+Datafile MAUD_065_00000.esg(19) : Rwp: 0.2655833, Rp: 0.2219029, Rwpnb: 0.29610246, Rwpnb1: 0.27536538, Rwpnb2: 0.2621618, Rpnb: 0.25578877Rpnb1: 0.23608497Rpnb2: 0.22239883
+Datafile MAUD_065_00000.esg(20) : Rwp: 0.2545926, Rp: 0.19552025, Rwpnb: 0.28538674, Rwpnb1: 0.26117545, Rwpnb2: 0.24654679, Rpnb: 0.2274841Rpnb1: 0.20673497Rpnb2: 0.19303526
+Datafile MAUD_065_00000.esg(21) : Rwp: 0.2921429, Rp: 0.1897967, Rwpnb: 0.32885492, Rwpnb1: 0.305445, Rwpnb2: 0.29002705, Rpnb: 0.22263163Rpnb1: 0.20198989Rpnb2: 0.18841243
+Datafile MAUD_065_00000.esg(22) : Rwp: 0.26772425, Rp: 0.19785333, Rwpnb: 0.30639732, Rwpnb1: 0.27542055, Rwpnb2: 0.25756273, Rpnb: 0.23815326Rpnb1: 0.21222994Rpnb2: 0.19652864
+Datafile MAUD_065_00000.esg(23) : Rwp: 0.28591815, Rp: 0.20899789, Rwpnb: 0.3311046, Rwpnb1: 0.29732862, Rwpnb2: 0.27753437, Rpnb: 0.25614208Rpnb1: 0.2266677Rpnb2: 0.20885192
+Datafile MAUD_065_00000.esg(24) : Rwp: 0.325193, Rp: 0.24538398, Rwpnb: 0.37630346, Rwpnb1: 0.33773986, Rwpnb2: 0.31801137, Rpnb: 0.3003723Rpnb1: 0.268142Rpnb2: 0.24871486
+Datafile MAUD_065_00000.esg(25) : Rwp: 0.33658338, Rp: 0.26714137, Rwpnb: 0.38404804, Rwpnb1: 0.3484372, Rwpnb2: 0.32993245, Rpnb: 0.32068714Rpnb1: 0.29003295Rpnb2: 0.2716755
+Datafile MAUD_065_00000.esg(26) : Rwp: 0.36610526, Rp: 0.3026864, Rwpnb: 0.40634084, Rwpnb1: 0.37600368, Rwpnb2: 0.3587921, Rpnb: 0.34966296Rpnb1: 0.32380295Rpnb2: 0.30753914
+Datafile MAUD_065_00000.esg(27) : Rwp: 0.34828752, Rp: 0.2627909, Rwpnb: 0.38576373, Rwpnb1: 0.35008812, Rwpnb2: 0.33011055, Rpnb: 0.30225724Rpnb1: 0.276791Rpnb2: 0.26087347
+Datafile MAUD_065_00000.esg(28) : Rwp: 0.29408437, Rp: 0.22979958, Rwpnb: 0.3409107, Rwpnb1: 0.30462596, Rwpnb2: 0.2820987, Rpnb: 0.28087816Rpnb1: 0.2504365Rpnb2: 0.23075885
+Datafile MAUD_065_00000.esg(29) : Rwp: 0.30414486, Rp: 0.23291893, Rwpnb: 0.35869452, Rwpnb1: 0.31717294, Rwpnb2: 0.29230246, Rpnb: 0.29281884Rpnb1: 0.25707743Rpnb2: 0.23504424
+Datafile MAUD_065_00000.esg(30) : Rwp: 0.29525325, Rp: 0.23472384, Rwpnb: 0.34725818, Rwpnb1: 0.30321082, Rwpnb2: 0.27891937, Rpnb: 0.29341888Rpnb1: 0.25720814Rpnb2: 0.23551938
+Datafile MAUD_065_00000.esg(31) : Rwp: 0.2901273, Rp: 0.22912684, Rwpnb: 0.33506688, Rwpnb1: 0.30463594, Rwpnb2: 0.2861164, Rpnb: 0.2793669Rpnb1: 0.25173613Rpnb2: 0.23406233
+Datafile MAUD_065_00000.esg(32) : Rwp: 0.30083796, Rp: 0.25247502, Rwpnb: 0.33741158, Rwpnb1: 0.31817055, Rwpnb2: 0.30703807, Rpnb: 0.29557723Rpnb1: 0.27527666Rpnb2: 0.26235476
+Datafile MAUD_065_00000.esg(33) : Rwp: 0.26461387, Rp: 0.23020029, Rwpnb: 0.29585105, Rwpnb1: 0.27634168, Rwpnb2: 0.26562724, Rpnb: 0.2671032Rpnb1: 0.24699111Rpnb2: 0.2339761
+Datafile MAUD_065_00000.esg(34) : Rwp: 0.2587599, Rp: 0.21661223, Rwpnb: 0.28824282, Rwpnb1: 0.26718113, Rwpnb2: 0.25498158, Rpnb: 0.24960087Rpnb1: 0.22958925Rpnb2: 0.21635711
+Datafile MAUD_065_00000.esg(35) : Rwp: 0.28734, Rp: 0.242543, Rwpnb: 0.3153632, Rwpnb1: 0.29563993, Rwpnb2: 0.28332996, Rpnb: 0.27346286Rpnb1: 0.25508812Rpnb2: 0.24215873
+
+Sample:Sample_x
+
+Phases:
+alpha
+Density: 4.615283421376624
+beta
+Density: 4.888687090034431
+
+             Object tree full informations
+
+
+                 Object: MAUD_065_00000.par
+
+String informations (CIF term, value) :
+_audit_creation_date, Thu Oct 10 12:48:47 BST 2019
+_audit_creation_method, Maud, version 2.92
+_audit_update_record, Thu Oct 10 12:58:52 BST 2019
+_computing_structure_refinement, Maud, version 2.92
+_refine_ls_R_factor_all, 0.23138589
+_refine_ls_wR_factor_all, 0.2884484
+_refine_ls_goodness_of_fit_all, 0.33517483
+_publ_contact_author_name, Luca Lutterotti
+_publ_section_title, Put a title here
+_pd_proc_ls_extract_int, end of iteration
+_pd_proc_ls_texture_comp, end of iteration
+_computing_reduce_memory_occ, true
+_pd_proc_ls_theoretical_weight, false
+_pd_proc_ls_extract_pos, end of iteration
+_pd_proc_ls_strain_comp, end of iteration
+_pd_proc_ls_extract_Fhkl, end of iteration
+_pd_proc_ls_Fhkl_comp, end of iteration
+_pd_proc_ls_weight_scheme, sqrt
+_refine_ls_weighting_scheme, WgtSS
+_refine_ls_WSS_factor, 12765.268
+_maud_store_spectra_with_analysis, true
+_riet_remove_phases_under, 0.001
+_riet_refine_cell_over, 0.1
+_riet_refine_sizestrain_over, 0.1
+_riet_refine_crystal_structure_over, 0.1
+_riet_refine_texture_over, 0.15
+_riet_refine_strain_over, 0.25
+_pd_proc_ls_interpolation_comp, end of iteration
+_maud_analysis_name, MAUD_065_00000.par
+_maud_analysis_prog_number, 0
+_maud_store_structure_factors_with_analysis, true
+_maud_store_texture_factors_with_analysis, true
+
+Subordinate objects :
+ Subordinate object number 0 :
+
+                 Object: Marqardt Least Squares
+
+String informations (CIF term, value) :
+_refine_ls_number_iteration, 5
+_riet_refine_ls_precision, 0.00000001
+_riet_refine_ls_derivative_step, 0.0001
+_riet_refine_ls_lambda, 0.01
+_riet_refine_ls_double_derivative, false
+
+
+Loops of subordinate objects :
+ Object loop number 0 :
+  Object number 0 :
+
+                 Object: Sample_x
+
+String informations (CIF term, value) :
+_pd_spec_description, Sample description
+_riet_thin_film_phase_refinement, films
+_reflectivity_layer_qc_from_phases, false
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:_pd_spec_orientation_omega  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:_pd_spec_orientation_chi  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:_pd_spec_orientation_phi  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:_riet_par_spec_displac_x  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:_riet_par_spec_displac_y  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:_riet_par_spec_displac_z  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:_pd_spec_size_axial  Value: 0, minimum: 0.0, maximum: 100.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:_pd_spec_size_equat  Value: 0, minimum: 0.0, maximum: 100.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:_pd_spec_size_thick  Value: 0, minimum: 0.0, maximum: 100.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:_pd_spec_size_radius  Value: 0, minimum: 0.0, maximum: 100.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:_pd_spec_size_radius_y  Value: 0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Subordinate objects :
+ Subordinate object number 0 :
+
+                 Object: No shape
+
+ Subordinate object number 1 :
+
+                 Object: None Layer workout
+
+ Subordinate object number 2 :
+
+                 Object: No precession
+
+
+Loops of subordinate objects :
+ Object loop number 0 :
+  Object number 0 :
+
+                 Object: layer1
+
+       AtomSite   fractions
+n  label  atom  fraction(at)  fraction(wt)
+1) Ti 1.0 1.0
+
+String informations (CIF term, value) :
+_reflectivity_layer_qc_from_phases, false
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:layer1:_riet_par_spec_layer_thickness  Value: 1.0E7, minimum: 0.1, maximum: 1.0E8 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:layer1:_reflectivity_layer_critical_qc  Value: 0.04, minimum: 0.0010, maximum: 0.5 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:layer1:_reflectivity_layer_absorption  Value: 2.0E-7, minimum: 1.0E-8, maximum: 1.0E-5 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:layer1:_reflectivity_layer_roughness  Value: 2.0, minimum: 0.01, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+Parameter loop number : 0
+- Parameter:  MAUD_065_00000.par:Sample_x:layer1:_pd_phase_atom_%0  Value: 0.969694, minimum: 0.0, maximum: 1.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:layer1:_pd_phase_atom_%1  Value: 0.030306006, minimum: 0.0, maximum: 1.0 Status: refinable, error: +-7.315725E-4, only positive values permitted, minimum significant value: 0.0
+
+
+
+ Object loop number 1 :
+  Object number 0 :
+
+                 Object: DataFileSet_x
+
+String informations (CIF term, value) :
+_pd_meas_datetime_initiated, Date/time meas
+_pd_meas_info_author_name, 
+_riet_meas_datafile_format, 
+_pd_proc_ls_background_function, 
+_pd_proc_ls_profile_function, 
+_pd_proc_ls_peak_cutoff, 30
+_pd_proc_2theta_range_min, 2.2
+_pd_proc_2theta_range_max, 8.94
+_pd_proc_2theta_range_inc, 
+_diffrn_ambient_pressure, 
+_diffrn_ambient_temperature, 
+_riet_lorentz_restricted, true
+_riet_par_background_interpolated, false
+_riet_par_background_interpolation_range, 10
+_riet_meas_dataset_compute, true
+_riet_meas_datafile_replace, false
+_riet_meas_dataset_random_texture, false
+_maud_background_add_automatic, false
+_maud_interpolated_background_iterations, 10
+_pd_proc_ls_datafile_weight, 1.0
+_riet_meas_dataset_no_strain, false
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_exp_shift  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_exp_thermal_shift  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_pd_spec_orientation_omega  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_pd_spec_orientation_chi  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_pd_spec_orientation_phi  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_pd_meas_orientation_omega_offset  Value: 0, minimum: 0, maximum: 0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_pd_meas_orientation_chi_offset  Value: 0, minimum: 0, maximum: 0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_pd_meas_orientation_phi_offset  Value: 0, minimum: 0, maximum: 0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_pd_meas_orientation_eta_offset  Value: 0, minimum: 0, maximum: 0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_spec_displac_x  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_spec_displac_y  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_spec_displac_z  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+
+Parameter loop informations :
+Parameter loop number : 0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_pol0  Value: 2.3040855, minimum: -847.94604, maximum: 1036.3785 Status: refinable, error: +-0.76313233, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_pol1  Value: 0.019193426, minimum: -77.26483, maximum: 5.2263017 Status: refinable, error: +-0.64432454, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_pol2  Value: -0.076512516, minimum: -77.26483, maximum: 0.0 Status: refinable, error: +-0.18972577, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_pol3  Value: 0.009062758, minimum: -86.82664, maximum: 71.03998 Status: refinable, error: +-0.02341946, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:_riet_par_background_pol4  Value: -2.9785477E-4, minimum: -86.82664, maximum: 71.03998 Status: refinable, error: +-0.0010330182, minimum significant value: 0.0
+
+
+Subordinate objects :
+ Subordinate object number 0 :
+
+                 Object: Le Bail
+
+String informations (CIF term, value) :
+_riet_lebail_iteration_max, 5
+_riet_lebail_error_max, 0.0050
+_riet_lebail_range_factor, 0.05
+_riet_lebail_use_bkg, true
+_riet_lebail_use_hkl, false
+_riet_lebail_summation_delta, 1.0E-4
+
+ Subordinate object number 1 :
+
+                 Object: none pe
+
+ Subordinate object number 2 :
+
+                 Object: none reflectivity
+
+ Subordinate object number 3 :
+
+                 Object: DAWN Caked Data - Diamond I12 1200mm
+
+String informations (CIF term, value) :
+_diffrn_measurement_device_type, DAWN Caked Data - Diamond I12 1200mm
+_maud_optional_intensity_factor, 1.0
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:_pd_proc_intensity_incident  Value: 0.0052997353, minimum: 0.0, maximum: 10000.0 Status: refinable, error: +-1.4396272E-5, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+Subordinate objects :
+ Subordinate object number 0 :
+
+                 Object: none cal
+
+ Subordinate object number 1 :
+
+                 Object: Flat Image Transmission
+
+String informations (CIF term, value) :
+_image_original_center_x, 0
+_image_original_center_y, 0
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Flat Image Transmission:_pd_instr_dist_spec/detc  Value: 1194.8865, minimum: 10.0, maximum: 1000.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Flat Image Transmission:_inst_ang_calibration_center_x  Value: 0.0071638497, minimum: -1.0, maximum: 1.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Flat Image Transmission:_inst_ang_calibration_center_y  Value: -0.005439139, minimum: -1.0, maximum: 1.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Flat Image Transmission:_inst_ang_calibration_beam_sx  Value: 0.0032586646, minimum: -0.1, maximum: 0.1 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Flat Image Transmission:_inst_ang_calibration_beam_sy  Value: -8.9470233E-4, minimum: -0.009841725, maximum: 0.008052321 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Flat Image Transmission:_inst_ang_calibration_ratio_pixels  Value: 1.0, minimum: -1.1, maximum: 1.1 Status: not refinable, minimum significant value: 0.0
+
+ Subordinate object number 2 :
+
+                 Object: Symmetrical Laue transmission
+
+String informations (CIF term, value) :
+_diffrn_radiation_monochromator, filtered
+_pd_instr_2theta_monochr_post, 0
+_pd_instr_dist_src/samp, 175.0
+_pd_instr_monochr_pre_spec, filtered
+_pd_instr_2theta_monochr_pre, 0
+_pd_instr_divg_eq_src/samp, 0.0
+_pd_instr_divg_slit_auto, false
+_pd_instr_divg_ax_src/samp, 0.0
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Symmetrical Laue transmission:_diffrn_radiation_polarisn_norm  Value: 0, minimum: 0.0, maximum: 360.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Symmetrical Laue transmission:_diffrn_radiation_polarisn_ratio  Value: 0, minimum: 0.0, maximum: 1.0 Status: not refinable, minimum significant value: 0.0
+
+ Subordinate object number 3 :
+
+                 Object: 2Theta
+
+ Subordinate object number 4 :
+
+                 Object: Synchrotron
+
+String informations (CIF term, value) :
+_diffrn_dynamical_scattering_correction, true
+_diffrn_dynamical_scattering_correction_crystallite, false
+
+ Subordinate object number 5 :
+
+                 Object: Standard
+
+ Subordinate object number 6 :
+
+                 Object: Caglioti PV
+
+String informations (CIF term, value) :
+_riet_caglioti_d_dep, true
+_riet_asymmetry_tan_dep, true
+_riet_omega/chi_broadening_convoluted, false
+_riet_par_asymmetry_truncation, 0.4
+_riet_par_asymmetry_reciprocal, false
+
+Parameter loop informations :
+Parameter loop number : 0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Caglioti PV:_riet_par_asymmetry_value0  Value: 0, minimum: 5.0, maximum: 1000.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Caglioti PV:_riet_par_asymmetry_value1  Value: 0, minimum: 0.0, maximum: 0.0 Status: not refinable, minimum significant value: 0.0
+
+Parameter loop number : 1
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Caglioti PV:_riet_par_caglioti_value0  Value: 7.339854E-4, minimum: -0.1, maximum: 0.1 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Caglioti PV:_riet_par_caglioti_value1  Value: -7.3852483E-4, minimum: -0.008123773, maximum: 0.0066467235 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Caglioti PV:_riet_par_caglioti_value2  Value: 0.1617418, minimum: -0.008123773, maximum: 0.0066467235 Status: not refinable, minimum significant value: 0.0
+
+Parameter loop number : 2
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Caglioti PV:_riet_par_gaussian_value0  Value: 0.29916987, minimum: -1.0, maximum: 2.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:DAWN Caked Data - Diamond I12 1200mm:Caglioti PV:_riet_par_gaussian_value1  Value: -0.018965721, minimum: -0.20862293, maximum: 0.17069149 Status: not refinable, minimum significant value: 0.0
+
+
+ Subordinate object number 7 :
+
+                 Object: none abs
+
+
+Loops of subordinate objects :
+
+ Subordinate object number 4 :
+
+                 Object: none fluorescence
+
+
+Loops of subordinate objects :
+ Object loop number 2 :
+  Object number 0 :
+
+                 Object: MAUD_065_00000.esg(0)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 0.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(0):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(0):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(0):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(0):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 1 :
+
+                 Object: MAUD_065_00000.esg(1)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 10.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(1):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(1):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(1):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(1):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 2 :
+
+                 Object: MAUD_065_00000.esg(2)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 20.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(2):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(2):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(2):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(2):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 3 :
+
+                 Object: MAUD_065_00000.esg(3)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 30.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(3):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(3):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(3):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(3):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 4 :
+
+                 Object: MAUD_065_00000.esg(4)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 40.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(4):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(4):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(4):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(4):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 5 :
+
+                 Object: MAUD_065_00000.esg(5)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 50.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(5):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(5):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(5):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(5):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 6 :
+
+                 Object: MAUD_065_00000.esg(6)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 60.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(6):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(6):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(6):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(6):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 7 :
+
+                 Object: MAUD_065_00000.esg(7)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 70.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(7):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(7):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(7):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(7):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 8 :
+
+                 Object: MAUD_065_00000.esg(8)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 80.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(8):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(8):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(8):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(8):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 9 :
+
+                 Object: MAUD_065_00000.esg(9)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 90.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(9):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(9):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(9):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(9):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 10 :
+
+                 Object: MAUD_065_00000.esg(10)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 100.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(10):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(10):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(10):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(10):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 11 :
+
+                 Object: MAUD_065_00000.esg(11)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 110.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(11):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(11):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(11):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(11):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 12 :
+
+                 Object: MAUD_065_00000.esg(12)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 120.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(12):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(12):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(12):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(12):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 13 :
+
+                 Object: MAUD_065_00000.esg(13)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 130.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(13):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(13):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(13):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(13):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 14 :
+
+                 Object: MAUD_065_00000.esg(14)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 140.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(14):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(14):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(14):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(14):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 15 :
+
+                 Object: MAUD_065_00000.esg(15)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 150.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(15):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(15):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(15):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(15):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 16 :
+
+                 Object: MAUD_065_00000.esg(16)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 160.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(16):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(16):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(16):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(16):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 17 :
+
+                 Object: MAUD_065_00000.esg(17)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 170.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(17):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(17):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(17):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(17):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 18 :
+
+                 Object: MAUD_065_00000.esg(18)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 180.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(18):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(18):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(18):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(18):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 19 :
+
+                 Object: MAUD_065_00000.esg(19)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 190.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(19):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(19):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(19):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(19):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 20 :
+
+                 Object: MAUD_065_00000.esg(20)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 200.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(20):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(20):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(20):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(20):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 21 :
+
+                 Object: MAUD_065_00000.esg(21)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 210.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(21):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(21):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(21):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(21):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 22 :
+
+                 Object: MAUD_065_00000.esg(22)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 220.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(22):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(22):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(22):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(22):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 23 :
+
+                 Object: MAUD_065_00000.esg(23)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 230.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(23):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(23):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(23):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(23):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 24 :
+
+                 Object: MAUD_065_00000.esg(24)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 240.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(24):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(24):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(24):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(24):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 25 :
+
+                 Object: MAUD_065_00000.esg(25)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 250.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(25):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(25):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(25):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(25):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 26 :
+
+                 Object: MAUD_065_00000.esg(26)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 260.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(26):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(26):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(26):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(26):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 27 :
+
+                 Object: MAUD_065_00000.esg(27)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 270.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(27):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(27):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(27):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(27):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 28 :
+
+                 Object: MAUD_065_00000.esg(28)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 280.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(28):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(28):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(28):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(28):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 29 :
+
+                 Object: MAUD_065_00000.esg(29)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 290.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(29):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(29):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(29):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(29):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 30 :
+
+                 Object: MAUD_065_00000.esg(30)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 300.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(30):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(30):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(30):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(30):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 31 :
+
+                 Object: MAUD_065_00000.esg(31)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 310.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(31):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(31):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(31):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(31):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 32 :
+
+                 Object: MAUD_065_00000.esg(32)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 320.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(32):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(32):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(32):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(32):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 33 :
+
+                 Object: MAUD_065_00000.esg(33)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 330.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(33):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(33):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(33):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(33):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 34 :
+
+                 Object: MAUD_065_00000.esg(34)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 340.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(34):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(34):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(34):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(34):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+  Object number 35 :
+
+                 Object: MAUD_065_00000.esg(35)
+
+String informations (CIF term, value) :
+_riet_meas_datafile_format, 
+_pd_meas_angle_omega, 0.0
+_pd_meas_angle_chi, 0.0
+_pd_meas_angle_phi, 0.0
+_pd_meas_angle_eta, 350.0
+_pd_meas_angle_2theta, 0.0
+_pd_meas_energy_kev, 0.0
+_riet_meas_datafile_compute, true
+_riet_meas_datafile_fitting, false
+_pd_meas_detector_id, none
+_pd_meas_step_count_time, 1.0
+_pd_meas_units_of_intensity, counts
+_riet_meas_datafile_as_background, false
+_riet_meas_data_group_count, 1
+_riet_datafile_type, 0
+_riet_datafile_save_custom, 
+_pd_meas_image_id, -1
+_riet_background_interpolated_manual, false
+_pd_meas_datetime_initiated, 
+_pd_proc_ls_datafile_weight, 1.0
+_riet_use_count_time, false
+_riet_chebyshev_polynomial_background, 
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(35):_pd_meas_counts_monitor  Value: 1.0, minimum: 0.0, maximum: 10.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(35):_riet_par_spec_displac_x_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(35):_riet_par_spec_displac_z_2R  Value: 0, minimum: -10.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:DataFileSet_x:MAUD_065_00000.esg(35):_riet_par_fluo_diffr_scale  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Parameter loop informations :
+
+
+
+
+ Object loop number 2 :
+  Object number 0 :
+
+                 Object: alpha
+
+       General position
+1)  +x  |  +y  |  +z
+2)  +x-y  |  +x  |  +z+0.5
+3)  -y  |  +x-y  |  +z
+4)  -x  |  -y  |  +z+0.5
+5)  -x+y  |  -x  |  +z
+6)  +y  |  -x+y  |  +z+0.5
+7)  +x-y  |  -y  |  -z
+8)  -x  |  -x+y  |  -z
+9)  +y  |  +x  |  -z
+10)  -y  |  -x  |  -z+0.5
+11)  -x+y  |  +y  |  -z+0.5
+12)  +x  |  +x-y  |  -z+0.5
+13)  -x  |  -y  |  -z
+14)  -x+y  |  -x  |  -z+0.5
+15)  +y  |  -x+y  |  -z
+16)  +x  |  +y  |  -z+0.5
+17)  +x-y  |  +x  |  -z
+18)  -y  |  +x-y  |  -z+0.5
+19)  -x+y  |  +y  |  +z
+20)  +x  |  +x-y  |  +z
+21)  -y  |  -x  |  +z
+22)  +y  |  +x  |  +z+0.5
+23)  +x-y  |  -y  |  +z+0.5
+24)  -x  |  -x+y  |  +z+0.5
+
+       AtomSite list
+n  label  symbol  quantity  occupancy  x  y  z  multiplicity  B  radius  weight  neutron scattering  neutron absorption
+1)  Ti 2.0 1.0 0.33333 0.66667 0.25000 2 0.5 1.45 47.883
+
+
+       Atomic fractions
+n  label  atomic fraction
+1) Ti 1.0
+
+       Reflection list
+n  h  k  l  multiplicity  d-space  crystallite(Angstrom)  microstrain
+1)  1 0 0 6 2.5290513885954855 
+2)  0 0 2 2 2.3326378 
+3)  1 0 1 12 2.22336985920624 
+4)  1 0 2 12 1.714662442362797 
+5)  1 1 0 6 1.4601485000000005 
+6)  1 0 3 12 1.3246984851853758 
+7)  2 0 0 6 1.2645256942977428 
+8)  1 1 2 12 1.2376666354680368 
+9)  2 0 1 12 1.2204866175028943 
+10)  0 0 4 2 1.1663189 
+11)  2 0 2 12 1.11168492960312 
+12)  1 0 4 12 1.0591192188270353 
+13)  2 0 3 12 0.981103066141904 
+14)  2 1 0 12 0.955891575303747 
+15)  2 1 1 24 0.9364369354289408 
+16)  1 1 4 12 0.9112897597625753 
+17)  2 1 2 24 0.884505692496463 
+18)  1 0 5 12 0.8753798679879156 
+19)  2 0 4 12 0.8573312211813985 
+20)  3 0 0 6 0.8430171295318285 
+21)  3 0 1 12 0.8295819062156939 
+22)  2 1 3 24 0.814347221169142 
+
+String informations (CIF term, value) :
+_chemical_name_common, alpha
+_chemical_formula_sum, Ti
+_symmetry_cell_setting, hexagonal
+_symmetry_Int_Tables_number, 1
+_symmetry_space_group_name_sch, C1^1
+_symmetry_space_group_name_H-M, P63/mmc
+_symmetry_space_group_name_Hall, P1
+_cell_formula_units_Z, 1
+_refine_ls_d_res_low, 0
+_refine_ls_d_res_high, 5000
+_reflns_d_resolution_low, 0.7
+_reflns_d_resolution_high, 50
+_maud_sg_centering_type, P
+_chemical_name_mineral, Titanium
+_chemical_name_systematic, Unknown
+
+Loop of string informations (CIF term, value) :
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:_cell_length_a  Value: 2.920297, minimum: 5.0, maximum: 30.0 Status: refinable, error: +-4.66746E-5, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:_cell_length_b  Value: 2.920297, minimum: 5.0, maximum: 30.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:_cell_length_c  Value: 4.6652756, minimum: 5.0, maximum: 30.0 Status: refinable, error: +-1.054505E-4, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:_cell_angle_alpha  Value: 90, minimum: 90.0, maximum: 120.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:_cell_angle_beta  Value: 90, minimum: 90.0, maximum: 120.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:_cell_angle_gamma  Value: 120, minimum: 90.0, maximum: 120.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:_riet_par_strain_thermal  Value: 0, minimum: -0.1, maximum: 0.1 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:_exptl_absorpt_cryst_size  Value: 0, minimum: 0.001, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:_riet_par_phase_scale_factor  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Subordinate objects :
+ Subordinate object number 0 :
+
+                 Object: E-WIMV
+
+String informations (CIF term, value) :
+_rita_generate_symmetry, none
+_rita_wimv_sum_coincidence, true
+_rita_wimv_iteration_max, 10
+_rita_wimv_exponent, 0.01
+_rita_wimv_refl_min_int, 0.001
+_rita_wimv_odf_resolution, 10
+_rita_wimv_tube_projection, true
+_rita_wimv_store_ang_conv, true
+_rita_wimv_odf_coverage_%, 100.0
+_rita_odf_sharpness, 
+_rita_wimv_phon_use, 
+_rita_wimv_tube_weight, 0.5
+_rita_wimv_normalize_pole_figures, true
+_rita_wimv_weigths_exponent, 0.5
+_rita_odf_refinable, true
+_rita_wimv_refl_min_dspacing, 0.0
+
+ Subordinate object number 1 :
+
+                 Object: Delft
+
+ Subordinate object number 2 :
+
+                 Object: Isotropic
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Isotropic:_riet_par_cryst_size  Value: 1000.98517, minimum: 50.0, maximum: 5000.0 Status: not refinable, only positive values permitted, minimum significant value: 5.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Isotropic:_riet_par_rs_microstrain  Value: 1.7671756E-7, minimum: 0.0, maximum: 0.005 Status: not refinable, only positive values permitted, minimum significant value: 1.0E-4
+
+ Subordinate object number 3 :
+
+                 Object: none abm
+
+ Subordinate object number 4 :
+
+                 Object: none pd
+
+ Subordinate object number 5 :
+
+                 Object: no magnetic
+
+ Subordinate object number 6 :
+
+                 Object: no strain
+
+ Subordinate object number 7 :
+
+                 Object: No microabsorption
+
+ Subordinate object number 8 :
+
+                 Object: Atomic Structure
+
+String informations (CIF term, value) :
+_riet_structure_quantity_from_occupancy, true
+_refine_ls_energy_weight, 1.0
+_riet_structure_use_U_dimensionless, false
+
+Subordinate objects :
+ Subordinate object number 0 :
+
+                 Object: No force field
+
+
+Loops of subordinate objects :
+ Object loop number 0 :
+  Object number 0 :
+
+                 Object: Ti
+
+String informations (CIF term, value) :
+_atom_site_type_symbol, dummy
+_atom_site_constraints, 
+_atom_type_number_in_cell, 2.0
+_atom_site_calc_flag, .
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Atomic Structure:Ti:_atom_site_occupancy  Value: 1.0, minimum: 0.0, maximum: 1.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Atomic Structure:Ti:_atom_site_fract_x  Value: 0.33333, minimum: 0.0, maximum: 1.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Atomic Structure:Ti:_atom_site_fract_y  Value: 0.66667, minimum: 0.0, maximum: 1.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Atomic Structure:Ti:_atom_site_fract_z  Value: 0.25000, minimum: 0.0, maximum: 1.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Atomic Structure:Ti:_atom_site_B_iso_or_equiv  Value: 0.5, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Atomic Structure:Ti:_atom_site_aniso_B_11  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Atomic Structure:Ti:_atom_site_aniso_B_22  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Atomic Structure:Ti:_atom_site_aniso_B_33  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Atomic Structure:Ti:_atom_site_aniso_B_12  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Atomic Structure:Ti:_atom_site_aniso_B_13  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:alpha:Atomic Structure:Ti:_atom_site_aniso_B_23  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+
+
+
+ Subordinate object number 9 :
+
+                 Object: atomic standard model
+
+ Subordinate object number 10 :
+
+                 Object: Le Bail
+
+String informations (CIF term, value) :
+_riet_lebail_iteration_max, 5
+_riet_lebail_error_max, 0.005
+_riet_lebail_range_factor, 0.05
+_riet_lebail_use_bkg, true
+_riet_lebail_summation_delta, 1.0E-4
+_riet_lebail_use_previous_factors, true
+
+ Subordinate object number 11 :
+
+                 Object: None TDS
+
+
+Loops of subordinate objects :
+
+  Object number 1 :
+
+                 Object: beta
+
+       General position
+1)  +x  |  +y  |  +z
+2)  -y  |  +x  |  +z
+3)  -x  |  -y  |  +z
+4)  +y  |  -x  |  +z
+5)  +x  |  -z  |  +y
+6)  +x  |  -y  |  -z
+7)  +x  |  +z  |  -y
+8)  +z  |  +y  |  -x
+9)  -x  |  +y  |  -z
+10)  -z  |  +y  |  +x
+11)  +z  |  +x  |  +y
+12)  +y  |  +z  |  +x
+13)  -y  |  -z  |  +x
+14)  +z  |  -x  |  -y
+15)  -y  |  +z  |  -x
+16)  -z  |  -x  |  +y
+17)  -z  |  +x  |  -y
+18)  +y  |  -z  |  -x
+19)  +y  |  +x  |  -z
+20)  -y  |  -x  |  -z
+21)  -x  |  +z  |  +y
+22)  -x  |  -z  |  -y
+23)  +z  |  -y  |  +x
+24)  -z  |  -y  |  -x
+25)  -x  |  -y  |  -z
+26)  +y  |  -x  |  -z
+27)  +x  |  +y  |  -z
+28)  -y  |  +x  |  -z
+29)  -x  |  +z  |  -y
+30)  -x  |  +y  |  +z
+31)  -x  |  -z  |  +y
+32)  -z  |  -y  |  +x
+33)  +x  |  -y  |  +z
+34)  +z  |  -y  |  -x
+35)  -z  |  -x  |  -y
+36)  -y  |  -z  |  -x
+37)  +y  |  +z  |  -x
+38)  -z  |  +x  |  +y
+39)  +y  |  -z  |  +x
+40)  +z  |  +x  |  -y
+41)  +z  |  -x  |  +y
+42)  -y  |  +z  |  +x
+43)  -y  |  -x  |  +z
+44)  +y  |  +x  |  +z
+45)  +x  |  -z  |  -y
+46)  +x  |  +z  |  +y
+47)  -z  |  +y  |  -x
+48)  +z  |  +y  |  +x
+49)  +x+0.5  |  +y+0.5  |  +z+0.5
+50)  -y+0.5  |  +x+0.5  |  +z+0.5
+51)  -x+0.5  |  -y+0.5  |  +z+0.5
+52)  +y+0.5  |  -x+0.5  |  +z+0.5
+53)  +x+0.5  |  -z+0.5  |  +y+0.5
+54)  +x+0.5  |  -y+0.5  |  -z+0.5
+55)  +x+0.5  |  +z+0.5  |  -y+0.5
+56)  +z+0.5  |  +y+0.5  |  -x+0.5
+57)  -x+0.5  |  +y+0.5  |  -z+0.5
+58)  -z+0.5  |  +y+0.5  |  +x+0.5
+59)  +z+0.5  |  +x+0.5  |  +y+0.5
+60)  +y+0.5  |  +z+0.5  |  +x+0.5
+61)  -y+0.5  |  -z+0.5  |  +x+0.5
+62)  +z+0.5  |  -x+0.5  |  -y+0.5
+63)  -y+0.5  |  +z+0.5  |  -x+0.5
+64)  -z+0.5  |  -x+0.5  |  +y+0.5
+65)  -z+0.5  |  +x+0.5  |  -y+0.5
+66)  +y+0.5  |  -z+0.5  |  -x+0.5
+67)  +y+0.5  |  +x+0.5  |  -z+0.5
+68)  -y+0.5  |  -x+0.5  |  -z+0.5
+69)  -x+0.5  |  +z+0.5  |  +y+0.5
+70)  -x+0.5  |  -z+0.5  |  -y+0.5
+71)  +z+0.5  |  -y+0.5  |  +x+0.5
+72)  -z+0.5  |  -y+0.5  |  -x+0.5
+73)  -x+0.5  |  -y+0.5  |  -z+0.5
+74)  +y+0.5  |  -x+0.5  |  -z+0.5
+75)  +x+0.5  |  +y+0.5  |  -z+0.5
+76)  -y+0.5  |  +x+0.5  |  -z+0.5
+77)  -x+0.5  |  +z+0.5  |  -y+0.5
+78)  -x+0.5  |  +y+0.5  |  +z+0.5
+79)  -x+0.5  |  -z+0.5  |  +y+0.5
+80)  -z+0.5  |  -y+0.5  |  +x+0.5
+81)  +x+0.5  |  -y+0.5  |  +z+0.5
+82)  +z+0.5  |  -y+0.5  |  -x+0.5
+83)  -z+0.5  |  -x+0.5  |  -y+0.5
+84)  -y+0.5  |  -z+0.5  |  -x+0.5
+85)  +y+0.5  |  +z+0.5  |  -x+0.5
+86)  -z+0.5  |  +x+0.5  |  +y+0.5
+87)  +y+0.5  |  -z+0.5  |  +x+0.5
+88)  +z+0.5  |  +x+0.5  |  -y+0.5
+89)  +z+0.5  |  -x+0.5  |  +y+0.5
+90)  -y+0.5  |  +z+0.5  |  +x+0.5
+91)  -y+0.5  |  -x+0.5  |  +z+0.5
+92)  +y+0.5  |  +x+0.5  |  +z+0.5
+93)  +x+0.5  |  -z+0.5  |  -y+0.5
+94)  +x+0.5  |  +z+0.5  |  +y+0.5
+95)  -z+0.5  |  +y+0.5  |  -x+0.5
+96)  +z+0.5  |  +y+0.5  |  +x+0.5
+
+       AtomSite list
+n  label  symbol  quantity  occupancy  x  y  z  multiplicity  B  radius  weight  neutron scattering  neutron absorption
+1)  Ti 2.0 1.0 0 0 0 2 0.5 1.45 47.883
+
+
+       Atomic fractions
+n  label  atomic fraction
+1) Ti 1.0
+
+       Reflection list
+n  h  k  l  multiplicity  d-space  crystallite(Angstrom)  microstrain
+1)  1 1 0 12 2.2572225192377564 
+2)  2 0 0 6 1.59609735 
+3)  2 1 1 24 1.3032080291028039 
+4)  2 2 0 12 1.1286112596188782 
+5)  3 1 0 24 1.00946059867179 
+6)  2 2 2 8 0.9215072346753482 
+7)  3 2 1 48 0.8531499199482588 
+
+String informations (CIF term, value) :
+_chemical_name_common, beta
+_chemical_formula_sum, Ti
+_symmetry_cell_setting, cubic
+_symmetry_Int_Tables_number, 1
+_symmetry_space_group_name_sch, C1^1
+_symmetry_space_group_name_H-M, Im-3m
+_symmetry_space_group_name_Hall, P1
+_cell_formula_units_Z, 1
+_refine_ls_d_res_low, 0
+_refine_ls_d_res_high, 5000
+_reflns_d_resolution_low, 0.7
+_reflns_d_resolution_high, 50
+_maud_sg_centering_type, P
+_chemical_name_mineral, Titanium-beta
+_chemical_name_systematic, Unknown
+
+Loop of string informations (CIF term, value) :
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:_cell_length_a  Value: 3.1921947, minimum: 5.0, maximum: 30.0 Status: refinable, error: +-3.349222E-4, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:_cell_length_b  Value: 3.1921947, minimum: 5.0, maximum: 30.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:_cell_length_c  Value: 3.1921947, minimum: 5.0, maximum: 30.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:_cell_angle_alpha  Value: 90, minimum: 90.0, maximum: 120.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:_cell_angle_beta  Value: 90, minimum: 90.0, maximum: 120.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:_cell_angle_gamma  Value: 90, minimum: 90.0, maximum: 120.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:_riet_par_strain_thermal  Value: 0, minimum: -0.1, maximum: 0.1 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:_exptl_absorpt_cryst_size  Value: 0, minimum: 0.001, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:_riet_par_phase_scale_factor  Value: 1.0, minimum: 0.0, maximum: 100.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+
+Subordinate objects :
+ Subordinate object number 0 :
+
+                 Object: none tex
+
+ Subordinate object number 1 :
+
+                 Object: Delft
+
+ Subordinate object number 2 :
+
+                 Object: Isotropic
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Isotropic:_riet_par_cryst_size  Value: 1000.00446, minimum: 50.0, maximum: 5000.0 Status: not refinable, only positive values permitted, minimum significant value: 5.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Isotropic:_riet_par_rs_microstrain  Value: 6.748858E-4, minimum: 0.0, maximum: 0.005 Status: not refinable, only positive values permitted, minimum significant value: 1.0E-4
+
+ Subordinate object number 3 :
+
+                 Object: none abm
+
+ Subordinate object number 4 :
+
+                 Object: none pd
+
+ Subordinate object number 5 :
+
+                 Object: no magnetic
+
+ Subordinate object number 6 :
+
+                 Object: no strain
+
+ Subordinate object number 7 :
+
+                 Object: No microabsorption
+
+ Subordinate object number 8 :
+
+                 Object: Atomic Structure
+
+String informations (CIF term, value) :
+_riet_structure_quantity_from_occupancy, true
+_refine_ls_energy_weight, 1.0
+_riet_structure_use_U_dimensionless, false
+
+Subordinate objects :
+ Subordinate object number 0 :
+
+                 Object: No force field
+
+
+Loops of subordinate objects :
+ Object loop number 0 :
+  Object number 0 :
+
+                 Object: Ti
+
+String informations (CIF term, value) :
+_atom_site_type_symbol, dummy
+_atom_site_constraints, 
+_atom_type_number_in_cell, 2.0
+_atom_site_calc_flag, .
+
+Parameter informations :
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Atomic Structure:Ti:_atom_site_occupancy  Value: 1.0, minimum: 0.0, maximum: 1.0 Status: not refinable, only positive values permitted, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Atomic Structure:Ti:_atom_site_fract_x  Value: 0, minimum: 0.0, maximum: 1.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Atomic Structure:Ti:_atom_site_fract_y  Value: 0, minimum: 0.0, maximum: 1.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Atomic Structure:Ti:_atom_site_fract_z  Value: 0, minimum: 0.0, maximum: 1.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Atomic Structure:Ti:_atom_site_B_iso_or_equiv  Value: 0.5, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Atomic Structure:Ti:_atom_site_aniso_B_11  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Atomic Structure:Ti:_atom_site_aniso_B_22  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Atomic Structure:Ti:_atom_site_aniso_B_33  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Atomic Structure:Ti:_atom_site_aniso_B_12  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Atomic Structure:Ti:_atom_site_aniso_B_13  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+- Parameter:  MAUD_065_00000.par:Sample_x:beta:Atomic Structure:Ti:_atom_site_aniso_B_23  Value: 0, minimum: -1.0, maximum: 10.0 Status: not refinable, minimum significant value: 0.0
+
+
+
+ Subordinate object number 9 :
+
+                 Object: atomic standard model
+
+ Subordinate object number 10 :
+
+                 Object: Le Bail
+
+String informations (CIF term, value) :
+_riet_lebail_iteration_max, 5
+_riet_lebail_error_max, 0.005
+_riet_lebail_range_factor, 0.05
+_riet_lebail_use_bkg, true
+_riet_lebail_summation_delta, 1.0E-4
+_riet_lebail_use_previous_factors, true
+
+ Subordinate object number 11 :
+
+                 Object: None TDS
+
+
+Loops of subordinate objects :
+
+
+
+
+
