@@ -19,9 +19,9 @@ function [  ] = ODF_plot(phase, odf, odf_max, outputDir, baseFileName, specSym, 
     mtexColorbar ('location', 'southOutSide', 'title', 'mrd'); % move colorbar to horizontal to avoid any overlap
     set(gcf, 'PaperPositionMode', 'auto');
     if strcmp(specSym, 'orthorhombic')
-      saveas (ODF_fig, fullfile(outputDir, strcat('alpha_ODF_orthorhombic_', baseFileName(5:end-4), '.bmp')));
+      saveas (ODF_fig, fullfile(outputDir, strcat('alpha_ODF_orthorhombic_', baseFileName(5:end-4), '.png')));
     elseif strcmp(specSym, 'triclinic')
-      saveas (ODF_fig, fullfile(outputDir, strcat('alpha_ODF_triclinic_', baseFileName(5:end-4), '.bmp')));
+      saveas (ODF_fig, fullfile(outputDir, strcat('alpha_ODF_triclinic_', baseFileName(5:end-4), '.png')));
     else 
       disp('specSym not satisfied - choose orthorhombic or triclinic');
     end
@@ -34,9 +34,9 @@ function [  ] = ODF_plot(phase, odf, odf_max, outputDir, baseFileName, specSym, 
     mtexColorbar ('location', 'southOutSide', 'title', 'mrd'); % move colorbar to horizontal to avoid any overlap
     set(gcf, 'PaperPositionMode', 'auto');
     if strcmp(specSym, 'orthorhombic')
-      saveas (ODF_fig, fullfile(outputDir, strcat('beta_ODF_orthorhombic_', baseFileName(5:end-4), '.bmp')));
+      saveas (ODF_fig, fullfile(outputDir, strcat('beta_ODF_orthorhombic_', baseFileName(5:end-4), '.png')));
     elseif strcmp(specSym, 'triclinic')
-      saveas (ODF_fig, fullfile(outputDir, strcat('beta_ODF_triclinic_', baseFileName(5:end-4), '.bmp')));
+      saveas (ODF_fig, fullfile(outputDir, strcat('beta_ODF_triclinic_', baseFileName(5:end-4), '.png')));
     else 
       disp('specSym not satisfied - choose orthorhombic or triclinic');
     end

@@ -1,0 +1,50 @@
+image_numbers:
+    
+    start: 3100
+    end: 3400
+    step: 1
+
+file_paths:
+    
+    input_calibration: ../data/diamond_2017/calibration-pyFAI/calibration_1200mm_pyFAI.dat
+    output_calibration: ../analysis/diamond_2017/calibration-pyFAI/calibration_1200mm_pyFAI.esg
+    
+    input: ../data/diamond_2017/{test_number:03d}/pixium_{image_number:05d}.dat
+    output_esg: ../analysis/diamond_2017/{test_number:03d}_15deg/{test_number:03d}_{image_number:05d}.esg
+    output_par: ../analysis/diamond_2017/{test_number:03d}_15deg/{test_number:03d}_{image_number:05d}.par
+    output_par_phase1_refined: ../analysis/diamond_2017/{test_number:03d}_15deg/{test_number:03d}_{image_number:05d}_{phase1}_{number_of_iterations:02d}iter.par
+    output_par_phase2: ../analysis/diamond_2017/{test_number:03d}_15deg/{test_number:03d}_{image_number:05d}_{phase2}.par
+    
+    template: ../analysis/diamond_2017/{test_number:03d}_15deg/template_{test_number:03d}.par
+    
+    output_mac_ins: ../MAUD_batch_MacOS_{test_number:03d}_{phase}_{number_of_iterations:02d}iter.ins
+
+user_inputs:
+
+    test_number: 65
+
+    detector_distance_approx: 1200 
+    # an approximate distance which will be refined by MAUD
+    detector_distance: 1194.8561
+    # use the MAUD calibrated detector distance
+
+    pixel_size: 0.296
+
+    start_angle: 0
+    # specifying the angle of the first cake in the data file.
+    
+    omega: 0
+    # rotation of sample around X (RD) axis
+    chi: 0
+    # rotation of sample around Z (ND) axis
+    phi: 0
+    # rotation of sample around Y (TD) axis
+    
+    previous_esg_filename: "{test_number:03d}_03100"
+    # name of the data (.esg files) to be replaced in the MAUD template_******.par file
+    
+    number_of_iterations: 20
+    # number of refinement iterations
+    
+    phase1: alpha
+    phase2: beta
