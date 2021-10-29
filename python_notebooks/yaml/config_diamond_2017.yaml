@@ -12,12 +12,16 @@ file_paths:
     input: ../data/diamond_2017/{test_number:03d}/pixium_{image_number:05d}.dat
     output_esg: ../analysis/diamond_2017/{test_number:03d}_15deg/{test_number:03d}_{image_number:05d}.esg
     output_par: ../analysis/diamond_2017/{test_number:03d}_15deg/{test_number:03d}_{image_number:05d}.par
-    output_par_phase1_refined: ../analysis/diamond_2017/{test_number:03d}_15deg/{test_number:03d}_{image_number:05d}_{phase1}_{number_of_iterations:02d}iter.par
-    output_par_phase2: ../analysis/diamond_2017/{test_number:03d}_15deg/{test_number:03d}_{image_number:05d}_{phase2}.par
+    output_par_phase: ../analysis/diamond_2017/{test_number:03d}_15deg/{test_number:03d}_{image_number:05d}_{phase}.par
+    output_par_phase_refined: ../analysis/diamond_2017/{test_number:03d}_15deg/{test_number:03d}_{image_number:05d}_{phase}_{number_of_iterations}iter.par
     
     template: ../analysis/diamond_2017/{test_number:03d}_15deg/template_{test_number:03d}.par
     
-    output_mac_ins: ../MAUD_batch_MacOS_{test_number:03d}_{phase}_{number_of_iterations:02d}iter.ins
+    output_mac_ins: ../MAUD_batch_MacOS_{test_number:03d}_{phase}_{number_of_iterations}iter.ins
+    
+    results_file: ../analysis/diamond_2017/{test_number:03d}_15deg/results/batch_results_{test_number:03d}_{phase}_{number_of_iterations}iter.txt
+
+    texture_file: ../results/diamond_2017/{test_number:03d}_15deg/{test_number:03d}_ODF_data/{phase}/ODF_{test_number:03d}_{image_number:05d}_{phase}_{number_of_iterations}iter.txt
 
 user_inputs:
 
@@ -48,3 +52,5 @@ user_inputs:
     
     phase1: alpha
     phase2: beta
+    
+    odf_resolution: 15

@@ -1,0 +1,56 @@
+image_numbers:
+    
+    start: 1
+    end: 1
+    step: 1
+    
+file_paths:
+    
+    input_calibration: ../data/diamond_2021/103852-calibration/00001.dat
+    output_calibration: ../analysis/diamond_2021/103852-calibration/MAUD_calibration_754mm_pyFAI.esg
+    
+    input: ../data/diamond_2021/{test_number:06d}/{image_number:05d}_summed.dat
+    output_esg: ../analysis/diamond_2021/{test_number:06d}/15deg/{test_number:06d}_summed.esg
+    output_par: ../analysis/diamond_2021/{test_number:06d}/15deg/{test_number:06d}_summed.par
+    #output_par_phase:
+    output_par_phase_refined: ../analysis/diamond_2021/{test_number:06d}/15deg/{test_number:06d}_summed_{phase}.par
+    
+    template: ../analysis/diamond_2021/{test_number:06d}/15deg/template_{test_number:06d}.par
+    
+    #output_mac_ins: 
+    
+    #results_file:
+    
+    texture_file: ../results/diamond_2021/{test_number:06d}/{test_number:06d}_ODF_data/15deg/{phase}/ODF_{test_number:06d}_{phase}.txt
+
+user_inputs:
+
+    test_number: 103845
+
+    detector_distance_approx: 754 
+    # an approximate distance which will be refined by MAUD
+    detector_distance: 737.3251 
+    # use the MAUD calibrated detector distance
+
+    pixel_size: 0.172
+
+    start_angle: 0
+    # specifying the angle of the first cake in the data file.
+    
+    omega: 0
+    # rotation of sample around X (RD) axis
+    chi: 0
+    # rotation of sample around Z (ND) axis
+    phi: 90
+    # rotation of sample around Y (TD) axis
+    
+    #previous_esg_filename:
+    # name of the data (.esg files) to be replaced in the MAUD template_******.par file
+    
+    #number_of_iterations:
+    # number of refinement iterations
+    
+    phase1: alpha
+    phase2: beta
+    
+    odf_resolution: 15
