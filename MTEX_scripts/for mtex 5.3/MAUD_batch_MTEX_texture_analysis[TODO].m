@@ -1,20 +1,20 @@
 %% Specify the file names
 
 % path to files
-pname = '/Users/mbcx9cd4/Documents/GitHub/MAUD-batch-analysis/results/';
+pname = '/Users/mbcx9cd4/Documents/GitHub/MAUD-batch-analysis/results/diamond_2017/';
 
 % where are the texture results located
 experiment_number = '065';
 phase = 'alpha'
-results_file = strcat(experiment_number,' texture plots/',phase,'/','texture_strength_',phase,'_',experiment_number,'.txt')
+results_file = strcat(experiment_number, '_15deg/',experiment_number,'_texture_plots/',phase,'/','texture_strength_',phase,'_',experiment_number,'.txt')
 fname_results = [pname results_file]
 
 % where is the ETMT data located
-ETMT_file = strcat('ETMT data/',experiment_number,'.dat')
+ETMT_file = strcat('data_ETMT/',experiment_number,'_ETMT.dat')
 fname_ETMT = [pname ETMT_file]
 
 % where do we save the plots
-analysis_folder = strcat(experiment_number,' texture plots/',phase,'/')
+analysis_folder = strcat(experiment_number, '_15deg/',experiment_number,'_texture_plots/',phase,'/')
 analysis_path = [pname analysis_folder]
 
 %% Load texture results
