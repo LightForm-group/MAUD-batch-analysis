@@ -2,6 +2,9 @@
 /venv
 /.idea
 /.ipynb_checkpoints
-/analysis
-/data
-/results
+/data/diamond*
+/analysis/diamond*
+/results/diamond*
+data.zip
+analysis.zip
+results.zip
