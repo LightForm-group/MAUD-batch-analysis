@@ -75,7 +75,7 @@ pip list
 #pyyaml
 ```
 **8. If all in step 7 are present, you can now run the example notebooks.
-Ensure the venv is active and use the following command to boot jupyter notebook (using all libraries installed in the venv)
+Ensure the venv is active and use the following command to boot jupyter notebook (using all libraries installed in the venv).
 Warning - using just `jupyter notebook` without `python -m` can result in using your default python environment (the libraries may not be recognised):**
 ```unix
 python -m jupyter notebook
