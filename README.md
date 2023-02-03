@@ -14,8 +14,7 @@ The package includes a separate folder of MTEX scripts, in MATLAB, for automatic
 Development
 --------------
 
-This package was developed by Christopher S. Daniel at The 
-University of Manchester, UK, and was funded by the Engineering and Physical Sciences Research Council (EPSRC) via the LightForm programme grant (EP/R001715/1). LightForm is a 5 year multidisciplinary project, led by The Manchester University with partners at University of Cambridge and Imperial College, London (https://lightform.org.uk/).
+This package was developed by Christopher S. Daniel at The University of Manchester, UK, and was funded by the Engineering and Physical Sciences Research Council (EPSRC) via the LightForm programme grant (EP/R001715/1). LightForm is a 5 year multidisciplinary project, led by The Manchester University with partners at University of Cambridge and Imperial College, London (https://lightform.org.uk/).
 
 Contents
 -----------
@@ -28,7 +27,7 @@ Contents
 
 3. `python_notebooks/MAUD Batch Mode Analysis - Minimise Error.ipynb` A notebook for minimising the error of the Rietveld refinement in MAUD, by testing different refinement iterations.
 
-*Note, the `example-data/` and `example-analysis/` folders contain instuctions for downloading data that can be used as an example analysis, but a clear external file structure should be setup to support the analysis of large synchrotron datasets.*
+*Note, the `data/`, `analysis/` and `results/` folders contain instructions for downloading data that can be used as an example analysis, but a clear external file structure should be setup to support the analysis of large synchrotron datasets.*
 
 Installation and Virtual Environment Setup
 -----------
