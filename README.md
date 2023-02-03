@@ -1,11 +1,11 @@
 MAUD-batch-analysis
 -----------
 
-A series of Python scripts to facilitate working with [Materials Analysis Using Diffraction, MAUD](http://maud.radiographema.eu) in a batch analysis mode.
+A series of Python scripts to facilitate working with [Materials Analysis Using Diffraction, MAUD](http://maud.radiographema.eu) in a batch analysis mode, for analysis of large synchrotron X-ray diffraction (SXRD) pattern image datasets.
 
 MAUD's batch analysis mode can be used to extract material properties from a series of synchrotron diffraction pattern images. In particular, this package is focused on refining and extracting crystallographic texture for multiple phases from a series of diffraction pattern images, using MAUD's in-built E-WIMV texture refinement algorithm.
 
-This package has been tested using MAUD Version 2.78 on Mac OS Monterey. MAUD batch mode has been tested using two different experimental datasets (from Diamond Light Source Ltd. in 2017 and in 2021). The data, analysis and results files for these experiments can be downloaded from an accompanying Zenodo release of this package, to demonstrate MAUD batch mode.
+This package has been tested using MAUD Version 2.78 on Mac OS Monterey. MAUD batch mode has been tested using two different experimental datasets (from Diamond Light Source Ltd. in 2017 and in 2021). The data, analysis and results files for these experiments can be downloaded from a [Zenodo release](https://doi.org/10.5281/zenodo.7602926) to accompany this package and to demonstrate MAUD batch mode.
 
 Following successful completion of a MAUD batch mode analysis, the texture is extracted as an orientation distribution function (ODF) in the form of a text file using a Python script.
 
